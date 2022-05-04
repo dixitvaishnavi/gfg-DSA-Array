@@ -1,0 +1,19 @@
+class  Solution {
+
+    public void scores(long a[], long b[]) {
+        // store the answer as
+        // GFG.ca=3;
+        // GFG.cb=5;
+        // Your code goes here
+        int acount=0,bcount=0;
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]>b[i])
+            acount++;
+            else if(b[i]>a[i])
+            bcount++;
+        }
+        GFG.ca=acount;
+         GFG.cb=bcount;
+    }
+}
