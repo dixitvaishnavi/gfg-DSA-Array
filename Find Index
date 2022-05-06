@@ -1,0 +1,32 @@
+
+class Solution
+{ 
+    // Function to find starting and end index 
+    static int[] findIndex(int a[], int N, int key) 
+    { 
+        //code here.
+          int startIndex = -1;
+      int endIndex = -1;
+      
+      int[] index = new int[2];
+      
+      for(int i=0;i<N;i++){
+          if(startIndex==-1){
+              if(a[i]==key){
+                  startIndex = i;
+                  endIndex = i;
+              }
+              
+          }else{
+              if(a[i]==key){
+                   endIndex = i;
+              }
+          }
+      }
+      
+      index[0]= startIndex;
+      index[1] = endIndex;
+      
+      return index;
+    }
+}
